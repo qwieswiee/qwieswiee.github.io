@@ -12,7 +12,7 @@
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
-body {
+body { min-height: 100vh;
   margin: 0;
   background:
     radial-gradient(50rem 24rem at 85% -4%, rgba(231, 46, 148, 0.14), transparent 70%),
@@ -101,7 +101,7 @@ a.card h3::after { content: " ↗"; color: var(--pink); }
 .site-footer a:hover { color: var(--pink); }
 
 /* plain pages (impressum) */
-main.wrap > h1 { margin-top: 3rem; }
+main.wrap { padding-top: 2rem; padding-bottom: 4rem; }
 
 @media (max-width: 52rem) {
   .hero { grid-template-columns: 1fr; gap: 2rem; padding-top: 2.5rem; padding-bottom: 2.5rem; }
