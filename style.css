@@ -2,13 +2,13 @@
   --bg: #0d1117;
   --bg2: #010409;
   --card: #161b22;
-  --line: #30363d;
+  --line: #df77cd;
   --ink: #a73079;
-  --dim: #8b949e;
+  --dim: #cc4689;
   --white: #f0f6fc;
-  --green: #56d364;
-  --blue: #79c0ff;
-  --yellow: #e3b341;
+  --black: #000000;
+  --pink: #e72e94;
+  --violet: #742294;
   --mono: ui-monospace, "Cascadia Mono", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
 }
 * { box-sizing: border-box; }
