@@ -1,102 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>web pet</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
-  <meta name="description" content="Personal site of Andrii Shabanov: Telegram channel, GitHub and favorite things.">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="wrap">
-      <a class="logo" href="#"> <span class="u">Andrii<span class="host">Shabanov</span> </span><span class="d"></span></a>
-      <nav aria-label="Main">
-        <a href="#favorites">favorites</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="wrap hero">
-      <div>
-        <p class="eyebrow">whoami</p>
-        <h1>hi, i'm <span class="name">Andrii Shabanov.</span></h1>
-        <p class="lead">hii, i'm learning web development and linux. this is my little corner of the internet</p>
-        <div class="btns">
-        </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>web pet</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>"
+    />
+    <meta
+      name="description"
+      content="Personal site of Andrii Shabanov: Telegram channel, GitHub and favorite things."
+    />
+    <link rel="stylesheet" href="style.css" />
+       <link rel="icon" href="favicon.ico" sizes="32x32" />
+     <link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32" />
+      <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    </head>
+        <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="logo" href="#">
+          <span class="u">Andrii<span class="host"> Shabanov</span></span
+          ><span class="d"></span
+        ></a>
+        <nav aria-label="Main">
+          <a href="#favorites">favorites</a>
+        </nav>
       </div>
+    </header>
 
-      <div class="term" role="group" aria-label="Short profile">
-        <div class="term-bar" aria-hidden="true">
-          <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
-        <span class="term-title">🐾 andrii@shabanov: ~</span>
+    <main>
+      <section class="wrap hero">
+        <div>
+          <p class="eyebrow">whoami</p>
+          <h1>hi, i'm <span class="name">Andrii Shabanov.</span></h1>
+          <p class="lead">
+            hii, i'm learning web development and linux. this is my little
+            corner of the internet
+          </p>
+          <div class="btns"></div>
         </div>
-        <div class="term-body">
-          <p><span class="prompt">$</span><span class="cmd">welcome to my web</span></p>
-          <div class="out">
-            <div class="row"><span class="k">name</span><span>Andrii Shabanov</span></div>
-            <div class="row"><span class="k">age</span><span>18</span></div>
-            <div class="row"><span class="k">location</span><span>Germany</span></div>
-            <div class="row"><span class="k">now</span><span>learning HTML, CSS, JavaScript, Git and Linux</span></div>
-            <div class="row"><span class="k">goal</span><span>IT apprenticeship in Germany</span></div>
+
+        <div class="term" role="group" aria-label="Short profile">
+          <div class="term-bar" aria-hidden="true">
+            <span class="dot r"></span><span class="dot y"></span
+            ><span class="dot g"></span>
+            <span class="term-title">🐾 andrii@shabanov: ~</span>
           </div>
-          <p><span class="prompt">$</span><span class="cursor" aria-hidden="true"></span></p>
+          <div class="term-body">
+            <p>
+              <span class="prompt">$</span
+              ><span class="cmd">welcome to my web</span>
+            </p>
+            <div class="out">
+              <div class="row">
+                <span class="k">name</span><span>Andrii Shabanov</span>
+              </div>
+              <div class="row"><span class="k">age</span><span>18</span></div>
+              <div class="row">
+                <span class="k">location</span><span>Germany</span>
+              </div>
+              <div class="row">
+                <span class="k">now</span
+                ><span>learning HTML, CSS, JavaScript, Git and Linux</span>
+              </div>
+              <div class="row">
+                <span class="k">goal</span
+                ><span>IT apprenticeship in Germany</span>
+              </div>
+            </div>
+           <div id="history"></div>
+            <form class="input-line" id="term-form">
+              <label class="prompt" for="cmd">$</label>
+               <input id="cmd" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" />
+                </form>
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="wrap section" id="links">
-      <h2>links</h2>
-      <p class="sub">where to find me.</p>
-      <div class="cards">
-        <a class="card" href="https://t.me/qwieswie">
-          <span class="tag">telegram</span>
-          <h3>telegram channel</h3>
-          <p>lifestyle posts.</p>
-        </a>
-        <a class="card" href="https://github.com/qwieswiee">
-          <span class="tag">github</span>
-          <h3>github</h3>
-          <p>my code and small projects :).</p>
-        </a>
-      </div>
-    </section>
-
-    <section class="wrap section" id="favorites">
-      <h2>favorites</h2>
-      <p class="sub">what I listen to and watch.</p>
-      <div class="cards">
-        <div class="card">
-          <span class="tag">albums</span>
-          <ol>
-            <li>Mechanical Animals, Marilyn Manson</li>
-            <li>OK Computer, Radiohead</li>
-            <li>Diamond Eyes, Deftones</li>
-            <li>D&gt;E&gt;T&gt;H&gt;M&gt;E&gt;T&gt;A&gt;L, Panchiko</li>
-            <li>loveless, my bloody valentine</li>
-          </ol>
+      <section class="wrap section" id="links">
+        <h2>links</h2>
+        <p class="sub">where to find me.</p>
+        <div class="cards">
+          <a class="card" href="https://t.me/qwieswie">
+            <span class="tag">telegram</span>
+            <h3>telegram channel</h3>
+            <p>lifestyle posts.</p>
+          </a>
+          <a class="card" href="https://github.com/qwieswiee">
+            <span class="tag">github</span>
+            <h3>github</h3>
+            <p>my code and small projects :).</p>
+          </a>
         </div>
-        <div class="card">
-          <span class="tag">anime</span>
-          <ol>
-            <li>Fullmetal Alchemist : Brotherhood</li>
-            <li>Steins Gate</li>
-            <li>Charlotte</li>
-            <li>Attack on Titan</li>
-            <li>Vinland Saga</li>
-          </ol>
-        </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <span>© 2026 Andrii Shabanov</span>
-      <a href="impressum.html">Impressum</a>
-    </div>
-  </footer>
-</body>
+      <section class="wrap section" id="favorites">
+        <h2>favorites</h2>
+        <p class="sub">what I listen to and watch.</p>
+        <div class="cards">
+          <div class="card">
+            <span class="tag">albums</span>
+            <ol>
+              <li>Mechanical Animals, Marilyn Manson</li>
+              <li>OK Computer, Radiohead</li>
+              <li>Diamond Eyes, Deftones</li>
+              <li>D&gt;E&gt;T&gt;H&gt;M&gt;E&gt;T&gt;A&gt;L, Panchiko</li>
+              <li>loveless, my bloody valentine</li>
+            </ol>
+          </div>
+          <div class="card">
+            <span class="tag">anime</span>
+            <ol>
+              <li>Fullmetal Alchemist : Brotherhood</li>
+              <li>Steins Gate</li>
+              <li>Charlotte</li>
+              <li>Attack on Titan</li>
+              <li>Vinland Saga</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <span>© 2026 Andrii Shabanov</span>
+        <a href="impressum.html">Impressum</a>
+      </div>
+    </footer>
+      <script src="script.js"></script>
+  </body>
 </html>

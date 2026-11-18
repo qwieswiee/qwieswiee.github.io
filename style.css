@@ -115,3 +115,10 @@ main.wrap { padding-top: 2rem; padding-bottom: 4rem; }
   .cursor { animation: none; } html { scroll-behavior: auto; }
   .btn, .card { transition: none; }
 }
+
+.input-line { display: flex; align-items: center; margin: 0; }
+.input-line input {
+  flex: 1; min-width: 0; padding: 0; border: 0; outline: 0;
+  background: none; color: var(--white); font: inherit; caret-color: var(--pink);
+}
+.out-line { margin: 0 0 0.4rem; white-space: pre-wrap; color: var(--ink); }
